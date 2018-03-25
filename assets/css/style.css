@@ -40,10 +40,7 @@ input#restaurant{
     border-bottom: white 1px solid;
     color: white; 
 }
-#modal1, #modal2, #modalTabs, #modalLoginBtn {
-    color: white;
-     background-color: #aed581;
-}
+
 .modal-footer{
     color: #66bb6a;
 }
@@ -52,13 +49,20 @@ input#restaurant{
 }
 
 #modalBtn, #modalBtn2, #modalLogin {
-    font-size:.7rem;
     border-bottom: white 1px solid;
     color: white;
     background-color: #aed581;
-
 }
-
+#txtEmail, #txtPassword, #txtName  { 
+    background-color:#aed581;
+    font-size:1rem;
+    border-bottom: white 1px solid;
+    color: white;   
+}
+.modal-footer {
+    color: white;
+    background-color: #aed581;
+}
 #hiUser{ padding:4px;
     font-size:1.1rem;
 text-align: center;}
@@ -120,9 +124,4 @@ div#notes.row{
 #topLoginBlock {
     width: 300px;
 }
-#txtEmail, #txtPassword, #txtName  { 
-    background-color:#aed581;
-    font-size:1rem;
-    border-bottom: white 1px solid;
-    color: white;   
-}
+
