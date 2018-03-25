@@ -1,13 +1,13 @@
 // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyCwhOakfPVFjGYSWZ9KwaM8EH9lqw5cY1A",
-    authDomain: "teamawesome-f39d7.firebaseapp.com",
-    databaseURL: "https://teamawesome-f39d7.firebaseio.com",
-    projectId: "teamawesome-f39d7",
+    apiKey: "AIzaSyD2rN2LZRtckwCpZlyOoY9gbNPkc0wjzFo",
+    authDomain: "teamawesom2.firebaseapp.com",
+    databaseURL: "https://teamawesom2.firebaseio.com",
+    projectId: "teamawesom2",
     storageBucket: "",
-    messagingSenderId: "539466789478"
-};
-firebase.initializeApp(config);
+    messagingSenderId: "265488828881"
+  };
+  firebase.initializeApp(config);
 
 var txtEmail = document.getElementById('txtEmail');
 var txtPassword = document.getElementById('txtPassword');
