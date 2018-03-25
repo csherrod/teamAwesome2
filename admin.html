@@ -1,0 +1,110 @@
+<head>
+        <title>My Veggie Eats Administrator Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewpot" content="width=device-width, initial-scale=1.0">
+        
+        <!-- STYLESHEETS  -->
+    
+        <!-- Google Fonts for Materialize/CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amita" rel="stylesheet">
+    
+        <!-- Materialize: Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        
+        <!-- Browser Reset -->
+        <link rel="stylesheet" href="./assets/css/reset.css">
+    
+        <!-- Site Style Overrides -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+    
+     
+    </head>
+    
+    <body>
+       <div class="container">
+            <nav>
+            
+            <div class="nav-wrapper light-green darken-1">
+                
+                    <h1 >My Veggie Eats Administrator</h1>
+                
+            </div>
+            </nav>
+        
+    
+            <div class="row light-green lighten-1 white-text">
+              Special Menu Items/Alternative Menu Items<br><br>
+            </div>
+            <div class="row light-green lighten-3">
+                <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Restaurant Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Secret Item or Standard Menu</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                         
+                        </tbody>
+                      </table>
+                
+            </div>
+      
+    
+    
+    
+        <div class="row">
+            <div class="newSItem"><br><br><br>
+              Add an Item:
+            </div>
+            <div class="row">
+                <form>
+                    <div class="input-field col s12">
+                        <label for="SIrestaurant">Restaurant Name</label>
+                        <input type="text" class="form-control" id="SIrestaurant">
+                    </div>
+                    <div class="input-field col s12">
+                        <label for="SIdescription">Description</label>
+                        <input type="text" class="form-control" id="SIdescription">
+                    </div>
+                    <div class="col s12">
+                       
+                        <input id="secretItemY" name="SIitemType" class="with-gap"  value="secret" type="checkbox" />
+                        <label for="secretItemY">Secret Menu Item</label>
+                    </div>
+                    <div class="col s12">
+                           
+                        <input id="secretItemN" name="SIitemType" class="with-gap"  value="standard" type="checkbox" />
+                        <label for="secretItemN">Standard Menu Item</label>
+                    </div>
+                    <div class="col s12">
+                        <button type="submit" id="addItem" class="btn">Add Item</button>
+                     </div>
+                </form>
+            </div>
+        </div>
+    
+    
+    </div>
+    <!-- JQUERY --> 
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    
+    <!-- MATERIALIZE -->    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    
+        
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        
+        <script src="./assets/javascript/admin.js"></script> 
+        
+    
+    
+    
+    
+    </body>
+    </html>
+    
+    
