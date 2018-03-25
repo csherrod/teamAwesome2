@@ -3,7 +3,7 @@ var initMapLng;
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
+        zoom: 12,
         center:{ lat: initMapLat, lng: initMapLng}
     });
 
@@ -92,8 +92,8 @@ function initMap() {
                 }
                 $("#restaurants-big").html(` <h2>${newMarker.name}</h2> <hr>`);
 
-                $("#restaurant-info").html(`User Rating: ${newMarker.avgRating} <br>
-                Average Price: ${newMarker.priceRange} <br> Address: ${newMarker.address}`);
+                $("#restaurant-info").html(`User Rating: ${newMarker.avgRating} <br><br>
+                Average Price: ${newMarker.priceRange} <br> <br>Address: ${newMarker.address}`);
             
 
                 

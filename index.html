@@ -36,194 +36,74 @@
         <header>
             <div class="row light-green darken-1">
                 <div class="col s12 m1">
-                    <img src="heartfoodT.gif" width="80" height="66" alt="A heart made up of different fruit">
+                    <img src="heartfoodT.gif" width="80px" height="66">
                 </div>
-                <div class="col s12 m7">
+                <div class="col s12 m9">
                     <a href="#" class="brand-logo white-text">My Veggie Eats</a>
                 </div>
-                <div class="col s12 m4">
-                    <div class="row">
+                <div class="col s12 m2">
+                    <ul class="right">
+                        <li id="hiUser"></li>
 
-                        <!-- Login Here msg for user - replace with hello msg once signed in-->
-                        <span id="welcome"></span>
-                        <form id="loginForm">
-
-                                <div class="input-field col s4">
-                                    <input id="txtEmailLogin" type="email">
-                                    <label for="email" class="white-text validate">Email</label>
-                                </div>
-                                <div class="input-field col s4">
-                                    <input id="txtPasswordLogin" type="password">
-                                    <label for="password" class="white-text validate">Password</label>
-                                </div>
-                            </form>
-
-                                <div class="col s4">
-                                    <button class="btn-small waves-effect waves-light light-green" id="btnLogin" name="action">Login
-                                    </button>
-                                    <button class="btn-small waves-effect waves-light light-green" id="btnLogOut" name="action">Sign Out
-                                    </button>
-                                    </div>
-
-
-                        <div class="row">
-                            <div class="col s6">
-                                <!-- Existing User:Login Modal Trigger -->
-                                <a id="modalBtn" class="modal-trigger white-text" href="#modal1">Get Password</a>
-                            </div>
-
-                            <!-- Existing User:LOGIN MODAL-->
-                            <div id="modal1" class="modal modal-fixed-footer open white-text" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 4%;">
-                                <div class="modal-content">
-                                    <h4>What? You forgot your password?
-                                        <br> It's gonna be alright. We'll send you an email so you can reset it.
-                                    </h4>
-                                    <br>
-                                    <form id="pwForm" class="col s12">
-                                        <div class="row">
-                                            <div class="input-field col s6">
-                                                <input id="txtForgotEmail" type="email" class="validate">
-                                                <label for="email">Email</label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
-                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="btnPassword" name="action">Reset my password</a>
-                                </div>
-                            </div>
-
-
-
-                            <div class="col s6">
-                                <!-- New User:Login Modal Trigger -->
-                                <a id="modalBtn2" class="modal-trigger  white-text" href="#modal2">Register</a>
-                            </div>
-
-                            <!-- New User:LOGIN MODAL-->
-                            <div id="modal2" class="modal modal-fixed-footer open" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 4%;">
-                                <div class="modal-content">
-                                    <h4>Create Account</h4>
-                                    <br>
-                                    <br>
-                                        <form id="registerForm" class="col s12">
-                                            <div class="row">
-                                                <div class="input-field col s12">
-                                                    <input id="txtName" type="text" class="validate">
-                                                    <label for="name">Name</label>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="input-field col s12">
-                                                    <input id="txtEmail" type="email" class="validate">
-                                                    <label for="email">Email</label>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="input-field col s12">
-                                                    <input id="txtPassword" type="password" class="validate">
-                                                    <label for="password">Password</label>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-
-                                    <div class="modal-footer">
-                                        <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Cancel</a>
-                                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="btnSignUp">Sign Up!</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <li>
+                            <a id="modalLoginBtn" class="waves-effect waves-light btn modal-trigger" href="#modalLogin">Login</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
         </header>
-
 
         <!-- Search boxes -->
         <div class="row light-green darken-1">
 
             <form id="headerSearch">
-                <!-- City Search -->
-                <div class="col s6 m5 input-field">
-                    <input id="city" type="text">
-                    <label for="city" class="white-text right">Enter City to Search</label>
-                </div>
-                <!-- Restaurant Name - search for user input rest name -->
-                <div class="col s12 m3 l3 input-field">
-                    <input id="restaurant" type="text">
-                    <label for="restaurant" class="white-text">Restaurant Name</label>
-                </div>
-                <div class="col s3 m4 searchDiv">
+
+                <div class="col s3 searchDiv">
                     <span id="signedInAs"></span>
-                    <button type="submit" id="searchIt" class="btn-floating btn-small waves-effect waves-light red" value="Search">
+                    <button type="submit" id="searchIt" class="btn-floating btn-small waves-effect waves-light right red" value="Search">
                         <i class="material-icons prefix">search</i>
                     </button>
                 </div>
 
-                <div  class="col s6 m2">
-                    <p id="hiUser">Welcome User Name</p>
+                <div class="col s12 m3 l3 input-field">
+                    <input id="city" type="text">
+                    <label for="city" class="white-text">City to Search</label>
                 </div>
-                 <!-- Phase II:  Additional Search Features 
-                
-            1. Cuisine Search to add non-veg restaurants -->
-            <!-- <div id="cuisineSearch" class="input-field col s12 m3 ">
-                <select id="drop-down" >
-                    <option class="white-text" value="" selected >Add Cuisine</option>
-                 <option value="1">defaut 1</option>
-                    <option value="2">defaut 2</option>
-                    <option value="3">defaut 3</option>  -->
 
-                <!--</select> 
-            </div>-->
+                <div id="cuisineSearch" class="input-field col s12 m3 ">
+                    <select id="drop-down">
+                        <option class="white-text" value="" selected>Add Cuisine</option>
+                    </select>
+                </div>
 
-                <!--2. Restaurant Name - search for user input rest name -->
-                <!-- <div hidden class="col s12 m3 l3 input-field ">
+                <div class="col s12 m3 l3 input-field">
                     <input id="restaurant" type="text">
                     <label for="restaurant" class="white-text">Restaurant Name</label>
-                </div> -->
-
-
+                </div>
 
             </form>
         </div>
-
-
         <!-- End of top -->
 
         <!-- Content -->
-
-
         <div class="row">
-
 
             <!-- Left column:  Google Map/tabs -->
             <div id="googleAPI" class="col s12 m6 l8">
 
                 <!-- Map Tabs -->
                 <div class="row light-green lighten-2">
-                    <div class="col s1">
+                    <div class="col s3">
                         <!-- Add Tab Modal Trigger -->
-                        <a id="modalBtnTab" class="waves-effect waves-light modal-trigger" href="#modalTabs">Tab
-                            <i class="material-icons left">add_box</i>
-                        </a>
+                        <a id="modalBtnTab" class="waves-effect waves-light btn modal-trigger" href="#modalTabs">+ Tab</a>
                     </div>
                     <!-- Map Tab MODAL-->
-                    <div id="modalTabs" class="modal modal-fixed-footer open white-text" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 4%;">
+                    <div id="modalTabs" class="modal grey lighten-2" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 4%;">
                         <div class="modal-content">
                             <h4>Add/Update A Map Tab</h4>
                             <div class="row">
                                 <form id="mapTabs" class="col s12">
-                                    <!-- Select Tab 1, 2, or 3-->
-                                    <!-- <div class="row">
-                                    <input id="tab1" name="tabNumber" class="with-gap"  type="radio" checked />
-                                    <label for="tab1">Tab 1</label>
-                                    <input id="tab2" name="tabNumber" class="with-gap"  type="radio" checked />
-                                    <label for="tab2">Tab 2</label>
-                                    <input id="tab3" name="tabNumber" class="with-gap"  type="radio" checked />
-                                    <label for="tab3">Tab 3</label>   
-                                </div> -->
+
                                     <!-- Tab  Info -->
                                     <div class="row">
                                         <div class="input-field col s6">
@@ -260,26 +140,20 @@
                         </div>
                     </div>
 
-
                     <div class="col s9">
                         <!-- 3 Tabs for customizing -->
                         <ul class="tabs">
 
                             <li class="tab col s3">
                                 <a class="active" href="test1" id="tab1Name home">
-                                    <i class="material-icons prefix small red-text ">favorite</i>
+                                    <i class="material-icons prefix">favorite</i>
                                 </a>
                             </li>
 
-                        </ul>
+                            <ul class="tabs">
+                            </ul>
                     </div>
                 </div>
-
-
-
-
-
-
 
                 <!-- Map -->
                 <div class="row">
@@ -287,31 +161,27 @@
                 </div>
             </div>
 
-
             <!-- Right column:  Zomato restaurants/reviews/notes -->
             <div id="zomatoAPI" class="col s12 m6 l4">
 
                 <!-- Detail listing of either first in list or user choice goes here -->
                 <div class="row" id="photo">
-                    <span id="restaurant-photo">
-                        <img src="heartfoodT.gif" width="287" height="253" alt="A heart made up of different fruit">
-                    </span>
+                    <span id="restaurant-photo"></span>
                 </div>
                 <div class="row" id="listingDetails">
                     <span id="restaurants-big">Pick an avocado off the map for restaurant details</span>
                     <span id="restaurant-info"></span>
                 </div>
 
-
                 <!-- User Notes from Firebase -->
                 <div class="row" id="notes">
-                    <span id="userNotes">Chosen Restaurant: Firebase User Notes</span>
+                    <span id="userNotes"></span>
                 </div>
 
                 <!-- MODAL to add/edit/delete notes -->
-                <div class="row" id="userNotes">
-                    <div class="col s12">
-                        <!-- Add Tab Modal Trigger -->
+                <div class="row" id="notes">
+                    <div class="col s3">
+                        <!--Add Tab Modal Trigger -->
                         <a id="modalBtnNotes" class="btn-floating btn-small waves-effect waves-light right red" href="#modalNotes" value="editNotes">
                             <i class="material-icons prefix">edit</i>
                         </a>
@@ -337,45 +207,50 @@
                     </div>
                 </div>
 
-
-
+                <!-- We can place additional listings here with less detail here -->
+                <!-- Scrollable listing goes here (cap at some number?) -->
+                <div class="row" id="listings">
+                    <div class="col">
+                        <span id="restaurants-list"></span>
+                    </div>
+                </div>
             </div>
-
         </div>
+    </div>
+    <!-- End of login component -->
 
-        <!--Firebase Test lab 
-        <div class="row">
-            <form class="col s12" id="loginForm">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="txtName" type="name" class="validate">
-                        <label for="email">Name</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="txtEmail" type="email" class="validate">
-                        <label for="email">Email</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="txtPassword" type="password" class="validate">
-                        <label for="password">Password</label>
-                    </div>
-                </div>
-                <button class="btn waves-effect waves-light" id="btnLogin" name="action">Login
-                    <i class="material-icons right">send</i>
-                </button>
-                <button class="btn waves-effect waves-light" id="btnSignUp"  name="action">Sign Up
-                    <i class="material-icons right">create</i>
-                </button>
-                <button class="btn waves-effect waves-light" id="btnSignOut"  name="action">Sign Out
-                    <i class="material-icons right">directions_run</i>
-                </button>
-            </form>
-        </div>-->
+    <div id="modalLogin" class="modal light-green lighten-2" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 4%;">
+        <div class="modal-content">
+            <h4>Log In </h4>
+            <div class="row">
 
+                <form id="loginForm">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="txtName" type="name" class="validate">(New User Only)
+                            <label for="email" class="white-text"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="txtEmail" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="txtPassword" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+
+                    <button class="btn waves-effect waves-light modal-close" id="btnLogin" name="action">Login</button>
+                    <button class="btn waves-effect waves-light modal-close" id="btnSignUp" name="action">Sign Up</button>
+                    <button class="btn waves-effect waves-light modal-close" id="btnSignOut" name="action">Sign Out</button>
+                </form>
+            </div>
+        </div>
+        <!-- End of login component -->
 
         <!-- End of content -->
 
@@ -391,12 +266,8 @@
     <!-- Site Javascript Logic -->
     <script src="./assets/javascript/logic.js"></script>
 
-    <script src="./assets/javascript/firebase.js"></script>
+    <script src="./assets/javascript/firebase-KEEP.js"></script>
     <script src="./assets/javascript/googleApi.js"></script>
-
-    <!-- script below is from ozair -->
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHDpeaH0pq2ESqRK_mZLUkzJ6hUTdQ1TQ&callback=initMap">
-</script> -->
 
     <!-- script below is from kris -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwhOakfPVFjGYSWZ9KwaM8EH9lqw5cY1A&allback=initMap"></script>
