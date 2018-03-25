@@ -51,8 +51,13 @@ input#restaurant{
     color: white;
 }
 
-#modalBtn {font-size:.7rem;}
-#modalBtn2 {font-size:.7rem;}
+#modalBtn, #modalBtn2, #modalLogin {
+    font-size:.7rem;
+    border-bottom: white 1px solid;
+    color: white;
+    background-color: #aed581;
+
+}
 
 #hiUser{ padding:4px;
     font-size:1.1rem;
