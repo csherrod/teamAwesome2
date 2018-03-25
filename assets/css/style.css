@@ -40,7 +40,7 @@ input#restaurant{
     border-bottom: white 1px solid;
     color: white; 
 }
-#modal1, #modal2, #modalTabs {
+#modal1, #modal2, #modalTabs, #modalLoginBtn {
     color: white;
      background-color: #aed581;
 }
@@ -57,12 +57,6 @@ input#restaurant{
 #hiUser{ padding:4px;
     font-size:1.1rem;
 text-align: center;}
-
-.waves-effect.waves-blue{
-    /* The alpha value allows the text and background color
-    of the button to still show through. */
-     background-color: rgba(59, 38, 175, 0.65);
-   }
 
 .cuisineOptionBox{
     font-size:16px;
@@ -121,7 +115,7 @@ div#notes.row{
 #topLoginBlock {
     width: 300px;
 }
-#txtEmail, #txtPassword  { 
+#txtEmail, #txtPassword, #txtName  { 
     background-color:#aed581;
     font-size:1rem;
     border-bottom: white 1px solid;
