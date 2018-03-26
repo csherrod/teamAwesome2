@@ -45,7 +45,7 @@
                     <ul class="right">
                         <li id="hiUser"></li>
                         <li>
-                            <a id="modalLoginBtn" class="waves-effect waves-light btn-small modal-trigger light-green" href="#modalLogin">Login</a>
+                            <a id="modalLoginBtn" class="waves-effect waves-light btn-small modal-trigger" href="#modalLogin">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -53,11 +53,10 @@
         </header>
 
         <!-- Login Modal Component -->
-        <div id="modalLogin" class="modal" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 4%;">
+        <div id="modalLogin" class="modal modal-fixed-footer" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 4%;">
             <div class="modal-content">
                 <h4>Log In </h4>
                 <div class="row">
-
                     <form id="loginForm">
                         <div class="row">
                             <div class="input-field col s12">
@@ -93,18 +92,19 @@
                     <input id="city" type="text">
                     <label for="city" class="white-text">City to Search</label>
                 </div>
+                <div id="cuisineSearch" class="input-field col s12 m3 ">
+                        <select id="drop-down">
+                            <option class="white-text" value="" selected>Add Cuisine</option>
+                        </select>
+                    </div>
                 <div class="col s3 searchDiv">
                         <form id="headerSearch">
-                        <button type="submit" id="searchIt" class="btn-floating btn-small waves-effect waves-light right red" value="search">
+                        <button type="submit" id="searchIt" class="btn-floating btn-small waves-effect waves-light red" value="search">
                             <i class="material-icons prefix">search</i>
                         </button>
                         </form>
                     </div>
-                <div id="cuisineSearch" class="input-field col s12 m3 ">
-                    <select id="drop-down">
-                        <option class="white-text" value="" selected>Add Cuisine</option>
-                    </select>
-                </div>
+
                 <!-- <div class="col s12 m3 l3 input-field">
                     <input id="restaurant" type="text">
                     <label for="restaurant" class="white-text">Restaurant Name</label>
@@ -181,10 +181,11 @@
 
                 <!-- Map -->
                 <div class="row">
-                    <div id="map" class="col s12 m6 l4"></div>>
+                    <div id="map" class="col s12 m6 l4"></div>
                 </div>
             </div>
             <!-- Right column:  Zomato restaurants/reviews/notes -->
+            <div class="row">
             <div id="zomatoAPI" class="col s12 m6 l4">
 
                 <!-- Detail listing of either first in list or user choice goes here -->
@@ -206,7 +207,7 @@
                         <a id="modalBtnNotes" class="btn-floating btn-small waves-effect waves-light right-align red modal-trigger open" href="#modalNotes">
                             <i class="material-icons prefix">edit</i>
                         </a>
-                    </div>
+                
                     <!-- Map Tab MODAL-->
                     <div id="modalNotes" class="modal modal-fixed-footer open white-text" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 4%;">
                         <div class="modal-content">
@@ -214,7 +215,7 @@
                             <div class="row">
                                 <form id="notePad" class="col s12">
                                     <div class="input-field col s12">
-                                        <textarea id="fbnotes" class="materialize-textarea">skdfsdfsdf  existing fb notes go here- dynamically fill</textarea>
+                                        <textarea id="fbnotes" class="materialize-textarea">Put in your persnal notes here</textarea>
                                     </div>
                                 </form>
                             </div>

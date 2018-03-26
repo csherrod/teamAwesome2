@@ -22,6 +22,9 @@ header .brand-logo{
     margin-left: -.75rem;
     margin-right: -.75rem;
 }
+#modalLoginBtn {
+    color: white;
+}
 input#city{
     border-bottom: white 1px solid;
 }
@@ -36,19 +39,9 @@ input#restaurant{
     border-bottom: white 1px solid;
     color: white;   
 }
-#txtForgotEmail, #pwForm {
-    border-bottom: white 1px solid;
-    color: white; 
-}
 
-.modal-footer{
-    color: #66bb6a;
-}
-#txtForgotEmail {
-    color: white;
-}
 
-#modalBtn, #modalBtn2, #modalLogin {
+#modalLogin, #modalTabs, #modalNotes {
     border-bottom: white 1px solid;
     color: white;
     background-color: #aed581;
@@ -61,19 +54,14 @@ input#restaurant{
 }
 .modal-footer {
     color: white;
-    background-color: #aed581;
+    background-color: #66bb6a;
 }
-#hiUser{ padding:4px;
+#hiUser{ 
+    padding:4px;
     font-size:1.1rem;
-text-align: center;}
-
-.cuisineOptionBox{
-    font-size:16px;
-    color:#26a69a;
-    display:block;
-    line-height:22px;
-    padding:14px 16px;
+    text-align: center;
 }
+
 .searchDiv{
     margin-top:20px;
 }
@@ -91,7 +79,8 @@ div#photo.row{
 }
 div#listingDetails.row{
     min-height:150px;
-    background-color: #f7e76e;
+    background-color: #8bc34a;
+    color: white;
     text-align: center;
 }
 #restaurants-big{
@@ -100,11 +89,10 @@ div#listingDetails.row{
 }
 div#notes.row{
     min-height:150px;
-    background-color: #f7e76e;
+    background-color: #689f38;
     border-top:1px solid grey;
 }
-#restaurant-info{
-}
+
 #modalBtnTab {
     font-size: 1.5em;
     color: #f2453d;
