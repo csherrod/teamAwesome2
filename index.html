@@ -53,7 +53,7 @@
         </header>
 
         <!-- Login Modal Component -->
-        <div id="modalLogin" class="modal light-green lighten-2" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 4%;">
+        <div id="modalLogin" class="modal" style="z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 4%;">
             <div class="modal-content">
                 <h4>Log In </h4>
                 <div class="row">
@@ -89,27 +89,26 @@
 
         <!-- Search boxes -->
         <div class="row light-green darken-1">
-                <div class="col s3 searchDiv">
-                    <form id="headerSearch">
-                    <span id="signedInAs"></span>
-                    <button type="submit" id="searchIt" class="btn-floating btn-small waves-effect waves-light right red" value="Search">
-                        <i class="material-icons prefix">search</i>
-                    </button>
-                </div>
                 <div class="col s12 m3 l3 input-field">
                     <input id="city" type="text">
                     <label for="city" class="white-text">City to Search</label>
                 </div>
+                <div class="col s3 searchDiv">
+                        <form id="headerSearch">
+                        <button type="submit" id="searchIt" class="btn-floating btn-small waves-effect waves-light right red" value="search">
+                            <i class="material-icons prefix">search</i>
+                        </button>
+                        </form>
+                    </div>
                 <div id="cuisineSearch" class="input-field col s12 m3 ">
                     <select id="drop-down">
                         <option class="white-text" value="" selected>Add Cuisine</option>
                     </select>
                 </div>
-                <div class="col s12 m3 l3 input-field">
+                <!-- <div class="col s12 m3 l3 input-field">
                     <input id="restaurant" type="text">
                     <label for="restaurant" class="white-text">Restaurant Name</label>
-                </div>
-            </form>
+                </div> -->
         </div>
         <!-- End of top -->
 
@@ -121,9 +120,9 @@
 
                 <!-- Map Tabs -->
                 <div class="row light-green lighten-2">
-                    <div class="col s3">
+                    <div class="col s1">
                         <!-- Add Tab Modal Trigger -->
-                        <a id="modalBtnTab" class="waves-effect waves-light btn modal-trigger" href="#modalTabs">Tab
+                        <a id="modalBtnTab" class="waves-effect waves-light modal-trigger" href="#modalTabs">Tab
                             <i class="material-icons left">add_box</i>
                         </a>
                     </div>
@@ -154,8 +153,8 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="input-field col s12">
-                                            <input id="tabZip" type="text">
+                                        <div class="input-field col s3">
+                                            <input id="tabZip" type="number">
                                             <label for="tabZip">Zip</label>
                                         </div>
                                     </div>
@@ -182,10 +181,9 @@
 
                 <!-- Map -->
                 <div class="row">
-                    <div id="map"></div>
+                    <div id="map" class="col s12 m6 l4"></div>>
                 </div>
             </div>
-
             <!-- Right column:  Zomato restaurants/reviews/notes -->
             <div id="zomatoAPI" class="col s12 m6 l4">
 
@@ -200,9 +198,12 @@
 
                 <!-- MODAL to add/edit/delete notes -->
                 <div class="row" id="notes">
-                    <div class="col s3">
+                    <div class="col s12 m6 l4">
+                        <span id="userNotes"></span>
+                        </div>
+                        </div>
                         <!--Add Tab Modal Trigger -->
-                        <a id="modalBtnNotes" class="btn-floating btn-small waves-effect waves-light right red" href="#modalNotes">
+                        <a id="modalBtnNotes" class="btn-floating btn-small waves-effect waves-light right-align red modal-trigger open" href="#modalNotes">
                             <i class="material-icons prefix">edit</i>
                         </a>
                     </div>
