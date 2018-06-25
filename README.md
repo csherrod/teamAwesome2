@@ -1,6 +1,15 @@
-# teamAwesome
+# Project Title: My Veggie Eats
 
-My Veggie Eats... 
+Built by team Awesome
+
+## The Problem
+
+In 2018 there is still no good way to sort through websites and apps to find good local vegetarian restaurants. This projects aims to fix that problem by using Google Maps API to populate restaurants in Houston that are vegetarian friendly. 
+
+## Prerequisites
+
+You need to have working knowledge of html, css,  javascript. and jquery. It is also helpful to know materialize and have experience with firebase if you want to clone the repo and make it yourself.
+
 
 ## Instructions
 
@@ -22,7 +31,7 @@ My Veggie Eats...
 ## Authors
 
 * **Carolyn Vasisko** - [vasisko](https://github.com/vasisko)
-* **Cody Sherrod** - [csherrod](https://github.com/csherrod/)
+* **Cody Sherrod** - [csherrod](https://github.com/csherrod)
 * **Kris Acker Bierma** - [KrisBierma](https://github.com/KrisBierma)
 * **Ozair Khan** - [OzairK](https://github.com/OzairK)
 
